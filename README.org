@@ -1,20 +1,28 @@
-** Memteller
+* Memteller
 Script that shows the memory usage by the xcowsay 
 
 ** Requirement
  Install xcowsay
-#+BEGIN_SRC bash sudo apt install -y xcowsay #+END_SRC
+#+BEGIN_SRC bash 
+sudo apt install -y xcowsay 
+#+END_SRC
 
 ** Usage
-1. Clone the repo:-
-#+BEGIN_SRC bash git clone git@github.com:veekrum/memteller.git #+END_SRC
-2. get inside repo :-
-#+BEGIN_SRC bash cd memteller #+END_SRC
-3. run the script :- 
-#+BEGIN_SRC bash ./run.sh #+END_SRC
-4. Finish.
+Clone the repo:-
+#+BEGIN_SRC bash 
+git clone git@github.com:veekrum/memteller.git 
+#+END_SRC
+get inside repo :-
+#+BEGIN_SRC bash 
+cd memteller 
+#+END_SRC
+run the script :- 
+#+BEGIN_SRC bash 
+./run.sh 
+#+END_SRC
+Finish.
  
- ** Result
+** Result
  You will get noticed by the beautiful cow with the memory usage message like this:-
 [[https://github.com/veekrum/memteller/blob/master/images/cow.png]]
 
