@@ -3,7 +3,7 @@ Script that shows the memory usage by the xcowsay
 
 ## Requirement
  Install xcowsay
-````sudo apt install -y xcowsay````
+`sudo apt install -y xcowsay`
 
 ## Usage
 1. Clone the repo:- `git clone git@github.com:veekrum/memteller.git`
@@ -11,4 +11,8 @@ Script that shows the memory usage by the xcowsay
 3. run the script :- `./run.sh`
 4. Finish.
  
+ ## Result
+ You will get noticed by the beautiful cow with the memory usage message like this:-
+ 
+
     
