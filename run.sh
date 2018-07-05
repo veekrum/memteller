@@ -2,8 +2,6 @@
 #set -xe
 
 NAME=$USER
-cd ~/Downloads
-git clone git@github.com:veekrum/memteller.git
 
 cd memteller
 chmod 755 memteller.sh
