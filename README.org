@@ -23,7 +23,15 @@ run the script :-
 Finish.
  
 ** Result
- You will get noticed by the beautiful cow with the memory usage message like this:-
+ You will get noticed in each 30 minutes by the beautiful cow with the memory usage message like this:-
 [[https://github.com/veekrum/memteller/blob/master/images/cow.png]]
 
-    
+** Change Interval in Cron
+we are using the interval of 30 minutes to show the message. You can change the interval SO.
+#+BEGIN_SRC bash 
+vim run.sh and change the value of */interval_num * * * *
+#+END_SRC
+
+#+BEGIN_SRC bash 
+line="*/30 * * * * export DISPLAY=:0 && cd $DIR && ./memteller.sh > /tmp/cronlog.log 2>&1"
+#+END_SRC
