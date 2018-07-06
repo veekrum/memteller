@@ -35,3 +35,4 @@ vim run.sh and change the value of */interval_num * * * *
 #+BEGIN_SRC bash 
 line="*/30 * * * * export DISPLAY=:0 && cd $DIR && ./memteller.sh > /tmp/cronlog.log 2>&1"
 #+END_SRC
+Now, save and run ./run.sh again
