@@ -23,6 +23,7 @@ run the script :-
 Finish.
  
 ** Result
+ If your RAM memory-usage is more than 60%. else the message will not appear
  You will get noticed in each 30 minutes by the beautiful cow with the memory usage message like this:-
 [[https://github.com/veekrum/memteller/blob/master/images/cow.png]]
 
