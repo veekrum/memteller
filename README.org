@@ -27,12 +27,12 @@ Finish.
 [[https://github.com/veekrum/memteller/blob/master/images/cow.png]]
 
 ** Change Interval in Cron
-we are using the interval of 30 minutes to show the message. You can change the interval SO.
+we are using the interval of 5 minutes to show the message. You can change the interval SO.
 #+BEGIN_SRC bash 
 vim run.sh and change the value of */interval_num * * * *
 #+END_SRC
 
 #+BEGIN_SRC bash 
-line="*/30 * * * * export DISPLAY=:0 && cd $DIR && ./memteller.sh > /tmp/cronlog.log 2>&1"
+line="*/5 * * * * export DISPLAY=:0 && cd $DIR && ./memteller.sh > /tmp/cronlog.log 2>&1"
 #+END_SRC
 Now, save and run ``./run.sh`` again
