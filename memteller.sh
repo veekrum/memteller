@@ -10,10 +10,10 @@ set -xe
  num=$(printf "%.0f" $percent) ##  changing the float into integer
  echo $num
 
-    if (( `bc <<< "$num >= 60"`  )); then
+    if (( `bc <<< "$num >= 60 && $num <=69"`  )); then
 	echo "You are using $num"%" RAM Memory. Take a break my friend  " | `/usr/games/xcowsay`
     
-      elif (( `bc <<< "$num >= 70"`  )); then
+      elif (( `bc <<< "$num >= 70 && $num <=79"`  )); then
 	echo "You are using  $num"%" RAM Memory. Kill that Goddamn Zombie Processes my friend " | `/usr/games/xcowsay`
 
       elif (( `bc <<< "$num >= 80"`  )); then
