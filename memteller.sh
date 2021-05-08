@@ -1,7 +1,7 @@
 #!/bin/bash
 set -xe
- memTotal=`top -b -n 2 -d1 | grep "KiB Mem" | tail -n1 | awk -F , '{ print $1 }' | awk '{print $4}'`
- memUsed=`top -b -n 2 -d1 | grep "KiB Mem" | tail -n1 | awk -F , '{ print $3 }' | awk '{print $1}'`
+ memTotal=`top -b -n 2 -d1 | grep "MiB Mem" | tail -n1 | awk -F , '{ print $1 }' | awk '{print $4}'`
+ memUsed=`top -b -n 2 -d1 | grep "MiB Mem" | tail -n1 | awk -F , '{ print $3 }' | awk '{print $1}'`
  
  percent=$( bc <<< "scale=2; $memUsed/$memTotal * 100") ## using the bc to calculate in floating num 
  num=$(printf "%.0f" $percent) ##  changing the float into integer
